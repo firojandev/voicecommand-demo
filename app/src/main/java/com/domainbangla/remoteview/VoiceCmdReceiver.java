@@ -170,7 +170,7 @@ public class VoiceCmdReceiver  extends BroadcastReceiver {
                         case show:
                             Log.e(LOG_TAG, "Phrase  detected:show");
                            // mMainActivity.btnShowMenu.setOnClickListener(v -> mMainActivity.showPopupMenu(v));
-                            mMainActivity.showToast("Show is triggred");
+                            mMainActivity.showPopupMenu(mMainActivity.findViewById(android.R.id.content));
                             break;
                         case okay:
                             Log.e(LOG_TAG, "Phrase  detected:Okay");
